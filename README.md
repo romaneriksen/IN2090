@@ -7,14 +7,18 @@ The Oblig folders contains a description describing how the assignment is to be 
 ## Oblig1
 Modelling
 
+
 ## Oblig2
 SQL
+
 
 ## Oblig3
 Normal forms
 
+
 ## Oblig4
 SQL
+
 
 ## Oblig5
 Programming with SQL
