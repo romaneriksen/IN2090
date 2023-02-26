@@ -68,14 +68,14 @@ with nfilms AS (
 	WHERE fi.filmtype = 'C' AND country = 'Norway'
 ),
 pairs AS (
-	SELECT p1.personid as person1, p2.personid as person2, nfilms.filmid, 		nfilms.country
+	SELECT p1.personid as person1, p2.personid as person2, nfilms.filmid, nfilms.country
 	FROM filmparticipation AS p1 
 	INNER JOIN filmparticipation AS p2 ON (p1.filmid = p2.filmid)
 	INNER JOIN nfilms ON (nfilms.filmid = p1.filmid)
 	WHERE p1.personid!= p2.personid
 ),
 teller AS (
-	SELECT p.person1, concat(p1.firstname,' ',p1.lastname) as name1, p.person2, 		   		concat(p2.firstname,' ',p2.lastname) as name2, count(p.filmid) as nr
+	SELECT p.person1, concat(p1.firstname,' ',p1.lastname) as name1, p.person2, concat(p2.firstname,' ',p2.lastname) as name2, count(p.filmid) as nr
 	FROM pairs as p
 	INNER JOIN person as p1 ON (p.person1 = p1.personid)
 	INNER JOIN person as p2 ON (p.person2 = p2.personid)
