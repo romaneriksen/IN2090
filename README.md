@@ -5,20 +5,16 @@ Repository showcasing the mandatory assignements in the class IN2090 – Databas
 The Oblig folders contains a description describing how the assignment is to be solved including the solution to the assignment.
 
 ## Oblig1
-Modelling
-
+  - Modelling
 
 ## Oblig2
-SQL
-
+  - SQL
 
 ## Oblig3
-Normal forms
-
+  - Normal forms
 
 ## Oblig4
-SQL
-
+  - SQL
 
 ## Oblig5
-Programming with SQL
+  - Programming with SQL
